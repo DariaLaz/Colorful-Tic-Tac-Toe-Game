@@ -1,7 +1,7 @@
 let allCells = document.querySelectorAll('.cell')
 allCells.forEach(c => c.addEventListener('click', handleCellClick, {once: true}))
 let isRedsTurn = true;
-document.querySelector('#turn').textContent = `It is red's turn`
+document.querySelector('#turn').textContent = `It is Red's turn`
 let restartBtn = document.querySelector('#restart');
 restartBtn.addEventListener('click',() => (location.reload()));
 let winningCombinations = [
