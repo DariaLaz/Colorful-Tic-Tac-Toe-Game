@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+#game{
+    border: 1px solid black;
+    margin: 3% 38% 15% 38%;
+    padding: 3% 10% 3% 10%;
+    border-radius: 30px;
+    background-color: rgb(182, 149, 104);
+    font-size: 30px;
+}
+
+#turn{
+    margin: 5% 38% 0% 45%;
+}
+
+#board{
+    /* width: 100vw;
+    height: 100vh; */
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-content: center;
+}
+
+.cell{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.red, .blue{
+    cursor: not-allowed;
+}
+
+.red{
+    background-color: red;
+    
+}
+.blue{
+    background-color: blue;
+}
+
+#winning{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.9);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 5rem;
+    color: antiquewhite;
+}
+.hide{
+    display: none;  
+}
+.show{
+    display: flex;
+}
+
+button{
+    width: 11%;
+    height: 11%;
+    font-size: 50%;
+}
+
+button:hover{
+    color: white;
+    background-color: black;
+}
